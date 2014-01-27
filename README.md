@@ -5,5 +5,5 @@ Labs for CS 292 Big Data
 
 Authors:
 --------
-Andrew Plassard
+Andrew Plassard 
 Saideep Nannapaneni
