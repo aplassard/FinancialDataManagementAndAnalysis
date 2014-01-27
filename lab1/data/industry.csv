@@ -1,0 +1,216 @@
+Sector_Name,Industry_Name,Industry_ID
+Basic Materials,Agricultural Chemicals,112
+Basic Materials,Aluminum,132
+Basic Materials,Chemicals - Major Diversified,110
+Basic Materials,Copper,131
+Basic Materials,Gold,134
+Basic Materials,Independent Oil & Gas,121
+Basic Materials,Industrial Metals & Minerals,133
+Basic Materials,Major Integrated Oil & Gas,120
+Basic Materials,Nonmetallic Mineral Mining,136
+Basic Materials,Oil & Gas Drilling & Exploration,123
+Basic Materials,Oil & Gas Equipment & Services,124
+Basic Materials,Oil & Gas Pipelines,125
+Basic Materials,Oil & Gas Refining & Marketing,122
+Basic Materials,Silver,135
+Basic Materials,Specialty Chemicals,113
+Basic Materials,Steel & Iron,130
+Basic Materials,Synthetics,111
+Conglomerates,Conglomerates,210
+Consumer Goods,Appliances,310
+Consumer Goods,Auto Manufacturers - Major,330
+Consumer Goods,Auto Parts,333
+Consumer Goods,Beverages - Brewers,346
+Consumer Goods,Beverages - Soft Drinks,348
+Consumer Goods,Beverages - Wineries & Distillers,347
+Consumer Goods,Business Equipment,313
+Consumer Goods,Cigarettes,350
+Consumer Goods,Cleaning Products,326
+Consumer Goods,Confectioners,345
+Consumer Goods,Dairy Products,344
+Consumer Goods,Electronic Equipment,314
+Consumer Goods,Farm Products,341
+Consumer Goods,Food - Major Diversified,340
+Consumer Goods,Home Furnishings & Fixtures,311
+Consumer Goods,Housewares & Accessories,312
+Consumer Goods,Meat Products,343
+Consumer Goods,Office Supplies,327
+Consumer Goods,Packaging & Containers,325
+Consumer Goods,Paper & Paper Products,324
+Consumer Goods,Personal Products,323
+Consumer Goods,Photographic Equipment & Supplies,318
+Consumer Goods,Processed & Packaged Goods,342
+Consumer Goods,Recreational Goods; Other,317
+Consumer Goods,Recreational Vehicles,332
+Consumer Goods,Rubber & Plastics,322
+Consumer Goods,Sporting Goods,316
+Consumer Goods,Textile - Apparel Clothing,320
+Consumer Goods,Textile - Apparel Footwear & Accessories,321
+Consumer Goods,Tobacco Products; Other,351
+Consumer Goods,Toys & Games,315
+Consumer Goods,Trucks & Other Vehicles,331
+Financial,Accident & Health Insurance,431
+Financial,Asset Management,422
+Financial,Closed-End Fund - Debt,425
+Financial,Closed-End Fund - Equity,426
+Financial,Closed-End Fund - Foreign,427
+Financial,Credit Services,424
+Financial,Diversified Investments,423
+Financial,Foreign Money Center Banks,417
+Financial,Foreign Regional Banks,418
+Financial,Insurance Brokers,434
+Financial,Investment Brokerage - National,420
+Financial,Investment Brokerage - Regional,421
+Financial,Life Insurance,430
+Financial,Money Center Banks,410
+Financial,Mortgage Investment,447
+Financial,Property & Casualty Insurance,432
+Financial,Property Management,448
+Financial,REIT - Diversified,440
+Financial,REIT - Healthcare Facilities,442
+Financial,REIT - Hotel/Motel,443
+Financial,REIT - Industrial,444
+Financial,REIT - Office,441
+Financial,REIT - Residential,445
+Financial,REIT - Retail,446
+Financial,Real Estate Development,449
+Financial,Regional - Mid-Atlantic Banks,412
+Financial,Regional - Midwest Banks,414
+Financial,Regional - Northeast Banks,411
+Financial,Regional - Pacific Banks,416
+Financial,Regional - Southeast Banks,413
+Financial,Regional - Southwest Banks,415
+Financial,Savings & Loans,419
+Financial,Surety & Title Insurance,433
+Healthcare,Biotechnology,515
+Healthcare,Diagnostic Substances,516
+Healthcare,Drug Delivery,513
+Healthcare,Drug Manufacturers - Major,510
+Healthcare,Drug Manufacturers - Other,511
+Healthcare,Drug Related Products,514
+Healthcare,Drugs - Generic,512
+Healthcare,Health Care Plans,522
+Healthcare,Home Health Care,526
+Healthcare,Hospitals,524
+Healthcare,Long-Term Care Facilities,523
+Healthcare,Medical Appliances & Equipment,521
+Healthcare,Medical Instruments & Supplies,520
+Healthcare,Medical Laboratories & Research,525
+Healthcare,Medical Practitioners,527
+Healthcare,Specialized Health Services,528
+Industrial Goods,Aerospace/Defense - Major Diversified,610
+Industrial Goods,Aerospace/Defense Products & Services,611
+Industrial Goods,Cement,633
+Industrial Goods,Diversified Machinery,622
+Industrial Goods,Farm & Construction Machinery,620
+Industrial Goods,General Building Materials,634
+Industrial Goods,General Contractors,636
+Industrial Goods,Heavy Construction,635
+Industrial Goods,Industrial Electrical Equipment,627
+Industrial Goods,Industrial Equipment & Components,621
+Industrial Goods,Lumber; Wood Production,632
+Industrial Goods,Machine Tools & Accessories,624
+Industrial Goods,Manufactured Housing,631
+Industrial Goods,Metal Fabrication,626
+Industrial Goods,Pollution & Treatment Controls,623
+Industrial Goods,Residential Construction,630
+Industrial Goods,Small Tools & Accessories,625
+Industrial Goods,Textile Industrial,628
+Industrial Goods,Waste Management,637
+Services,Advertising Agencies,720
+Services,Air Delivery & Freight Services,773
+Services,Air Services; Other,772
+Services,Apparel Stores,730
+Services,Auto Dealerships,744
+Services,Auto Parts Stores,738
+Services,Auto Parts Wholesale,750
+Services,Basic Materials Wholesale,758
+Services,Broadcasting - Radio,724
+Services,Broadcasting - TV,723
+Services,Building Materials Wholesale,751
+Services,Business Services,760
+Services,CATV Systems,725
+Services,Catalog & Mail Order Houses,739
+Services,Computers Wholesale,755
+Services,Consumer Services,763
+Services,Department Stores,731
+Services,Discount; Variety Stores,732
+Services,Drug Stores,733
+Services,Drugs Wholesale,756
+Services,Education & Training Services,766
+Services,Electronics Stores,735
+Services,Electronics Wholesale,753
+Services,Entertainment - Diversified,722
+Services,Food Wholesale,757
+Services,Gaming Activities,714
+Services,General Entertainment,716
+Services,Grocery Stores,734
+Services,Home Furnishing Stores,737
+Services,Home Improvement Stores,736
+Services,Industrial Equipment Wholesale,752
+Services,Jewelry Stores,742
+Services,Lodging,710
+Services,Major Airlines,770
+Services,Management Services,769
+Services,Marketing Services,721
+Services,Medical Equipment Wholesale,754
+Services,Movie Production; Theaters,726
+Services,Music & Video Stores,743
+Services,Personal Services,762
+Services,Publishing - Books,729
+Services,Publishing - Newspapers,727
+Services,Publishing - Periodicals,728
+Services,Railroads,776
+Services,Regional Airlines,771
+Services,Rental & Leasing Services,761
+Services,Research Services,768
+Services,Resorts & Casinos,711
+Services,Restaurants,712
+Services,Security & Protection Services,765
+Services,Shipping,775
+Services,Specialty Eateries,713
+Services,Specialty Retail; Other,745
+Services,Sporting Activities,715
+Services,Sporting Goods Stores,740
+Services,Staffing & Outsourcing Services,764
+Services,Technical Services,767
+Services,Toy & Hobby Stores,741
+Services,Trucking,774
+Services,Wholesale; Other,759
+Technology,Application Software,821
+Technology,Business Software & Services,826
+Technology,Communication Equipment,841
+Technology,Computer Based Systems,812
+Technology,Computer Peripherals,815
+Technology,Data Storage Devices,813
+Technology,Diversified Communication Services,846
+Technology,Diversified Computer Systems,810
+Technology,Diversified Electronics,836
+Technology,Healthcare Information Services,825
+Technology,Information & Delivery Services,827
+Technology,Information Technology Services,824
+Technology,Internet Information Providers,851
+Technology,Internet Service Providers,850
+Technology,Internet Software & Services,852
+Technology,Long Distance Carriers,843
+Technology,Multimedia & Graphics Software,820
+Technology,Networking & Communication Devices,814
+Technology,Personal Computers,811
+Technology,Printed Circuit Boards,835
+Technology,Processing Systems & Products,842
+Technology,Scientific & Technical Instruments,837
+Technology,Security Software & Services,823
+Technology,Semiconductor - Broad Line,830
+Technology,Semiconductor - Integrated Circuits,833
+Technology,Semiconductor - Specialized,832
+Technology,Semiconductor Equipment & Materials,834
+Technology,Semiconductor- Memory Chips,831
+Technology,Technical & System Software,822
+Technology,Telecom Services - Domestic,844
+Technology,Telecom Services - Foreign,845
+Technology,Wireless Communications,840
+Utilities,Diversified Utilities,913
+Utilities,Electric Utilities,911
+Utilities,Foreign Utilities,910
+Utilities,Gas Utilities,912
+Utilities,Water Utilities,914
