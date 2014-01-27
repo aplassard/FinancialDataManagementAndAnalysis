@@ -11,7 +11,7 @@ if __name__=='__main__':
 	a = u.read()
 	root = ET.fromstring(a)
 	out_file = open(os.path.abspath('../data/industry.csv'),'w')
-	out_file.write(','.join(['Sector_Name','Industry_Name','Industry_ID']))
+	out_file.write('\t'.join(['Sector_Name','Industry_Name','Industry_ID']))
 	out_file.write('\n')
 	sectors = None
 	for child in root:
@@ -23,7 +23,6 @@ if __name__=='__main__':
 			industry_name = industry.get('name')
 			industry_name = industry_name.replace(",",";")
 			industry_id   = industry.get('id')
-			industry_id = industry_id.replace(",",";")
-			out_file.write(','.join([sector_name,industry_name,industry_id]))
+			out_file.write('\t'.join([sector_name,industry_name,industry_id]))
 			out_file.write('\n')
 	out_file.close()

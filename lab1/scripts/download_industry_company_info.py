@@ -11,9 +11,10 @@ out_file  = os.path.abspath('../data/company.csv')
 if __name__=='__main__':
 	f = open(prev_file,'r')
 	out = open(out_file,'w')
+	out.write("Industry_ID\tCompany_Name\tCompany_Symbol\n")
 	header = f.readline()
 	for line in f:
-		line = line.strip().split(",")
+		line = line.strip().split("\t")
 		industry_id = line[2]
 		print line[2]
 		url = url_template.format(id=line[2])
