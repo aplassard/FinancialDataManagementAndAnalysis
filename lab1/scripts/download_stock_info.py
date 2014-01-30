@@ -33,6 +33,7 @@ if __name__=='__main__':
 		p_e = a[9].strip('"')
 		o.write(",".join([stock,date,opening,close,low,high,volume,market_cap,p_e]))
 		o.write('\n')
+#		time.sleep(0.1)
 	o.close()
 
 
