@@ -29,10 +29,9 @@ if __name__=='__main__':
 		for company in companies:
 			company_symbol = company.get('symbol')
 			company_name   = company.get('name')
-			if company_symbol.find('.')==-1:
-				try:
-					out.write('\t'.join([industry_id,company_name,company_symbol]))
-					out.write('\n')
-				except:
-					print "Couldn't write %s %s" % (company_name,company_symbol)
+			try:
+				out.write('\t'.join([industry_id,company_name,company_symbol]))
+				out.write('\n')
+			except:
+				print "Couldn't write %s %s" % (company_name,company_symbol)
 	out.close()
