@@ -1,0 +1,215 @@
+112,Agricultural Chemicals,0
+132,Aluminum,0
+110,Chemicals - Major Diversified,0
+131,Copper,0
+134,Gold,0
+121,Independent Oil & Gas,0
+133,Industrial Metals & Minerals,0
+120,Major Integrated Oil & Gas,0
+136,Nonmetallic Mineral Mining,0
+123,Oil & Gas Drilling & Exploration,0
+124,Oil & Gas Equipment & Services,0
+125,Oil & Gas Pipelines,0
+122,Oil & Gas Refining & Marketing,0
+135,Silver,0
+113,Specialty Chemicals,0
+130,Steel & Iron,0
+111,Synthetics,0
+210,Conglomerates,1
+310,Appliances,2
+330,Auto Manufacturers - Major,2
+333,Auto Parts,2
+346,Beverages - Brewers,2
+348,Beverages - Soft Drinks,2
+347,Beverages - Wineries & Distillers,2
+313,Business Equipment,2
+350,Cigarettes,2
+326,Cleaning Products,2
+345,Confectioners,2
+344,Dairy Products,2
+314,Electronic Equipment,2
+341,Farm Products,2
+340,Food - Major Diversified,2
+311,Home Furnishings & Fixtures,2
+312,Housewares & Accessories,2
+343,Meat Products,2
+327,Office Supplies,2
+325,Packaging & Containers,2
+324,Paper & Paper Products,2
+323,Personal Products,2
+318,Photographic Equipment & Supplies,2
+342,Processed & Packaged Goods,2
+317,Recreational Goods; Other,2
+332,Recreational Vehicles,2
+322,Rubber & Plastics,2
+316,Sporting Goods,2
+320,Textile - Apparel Clothing,2
+321,Textile - Apparel Footwear & Accessories,2
+351,Tobacco Products; Other,2
+315,Toys & Games,2
+331,Trucks & Other Vehicles,2
+431,Accident & Health Insurance,3
+422,Asset Management,3
+425,Closed-End Fund - Debt,3
+426,Closed-End Fund - Equity,3
+427,Closed-End Fund - Foreign,3
+424,Credit Services,3
+423,Diversified Investments,3
+417,Foreign Money Center Banks,3
+418,Foreign Regional Banks,3
+434,Insurance Brokers,3
+420,Investment Brokerage - National,3
+421,Investment Brokerage - Regional,3
+430,Life Insurance,3
+410,Money Center Banks,3
+447,Mortgage Investment,3
+432,Property & Casualty Insurance,3
+448,Property Management,3
+440,REIT - Diversified,3
+442,REIT - Healthcare Facilities,3
+443,REIT - Hotel/Motel,3
+444,REIT - Industrial,3
+441,REIT - Office,3
+445,REIT - Residential,3
+446,REIT - Retail,3
+449,Real Estate Development,3
+412,Regional - Mid-Atlantic Banks,3
+414,Regional - Midwest Banks,3
+411,Regional - Northeast Banks,3
+416,Regional - Pacific Banks,3
+413,Regional - Southeast Banks,3
+415,Regional - Southwest Banks,3
+419,Savings & Loans,3
+433,Surety & Title Insurance,3
+515,Biotechnology,4
+516,Diagnostic Substances,4
+513,Drug Delivery,4
+510,Drug Manufacturers - Major,4
+511,Drug Manufacturers - Other,4
+514,Drug Related Products,4
+512,Drugs - Generic,4
+522,Health Care Plans,4
+526,Home Health Care,4
+524,Hospitals,4
+523,Long-Term Care Facilities,4
+521,Medical Appliances & Equipment,4
+520,Medical Instruments & Supplies,4
+525,Medical Laboratories & Research,4
+527,Medical Practitioners,4
+528,Specialized Health Services,4
+610,Aerospace/Defense - Major Diversified,5
+611,Aerospace/Defense Products & Services,5
+633,Cement,5
+622,Diversified Machinery,5
+620,Farm & Construction Machinery,5
+634,General Building Materials,5
+636,General Contractors,5
+635,Heavy Construction,5
+627,Industrial Electrical Equipment,5
+621,Industrial Equipment & Components,5
+632,Lumber; Wood Production,5
+624,Machine Tools & Accessories,5
+631,Manufactured Housing,5
+626,Metal Fabrication,5
+623,Pollution & Treatment Controls,5
+630,Residential Construction,5
+625,Small Tools & Accessories,5
+628,Textile Industrial,5
+637,Waste Management,5
+720,Advertising Agencies,6
+773,Air Delivery & Freight Services,6
+772,Air Services; Other,6
+730,Apparel Stores,6
+744,Auto Dealerships,6
+738,Auto Parts Stores,6
+750,Auto Parts Wholesale,6
+758,Basic Materials Wholesale,6
+724,Broadcasting - Radio,6
+723,Broadcasting - TV,6
+751,Building Materials Wholesale,6
+760,Business Services,6
+725,CATV Systems,6
+739,Catalog & Mail Order Houses,6
+755,Computers Wholesale,6
+763,Consumer Services,6
+731,Department Stores,6
+732,Discount; Variety Stores,6
+733,Drug Stores,6
+756,Drugs Wholesale,6
+766,Education & Training Services,6
+735,Electronics Stores,6
+753,Electronics Wholesale,6
+722,Entertainment - Diversified,6
+757,Food Wholesale,6
+714,Gaming Activities,6
+716,General Entertainment,6
+734,Grocery Stores,6
+737,Home Furnishing Stores,6
+736,Home Improvement Stores,6
+752,Industrial Equipment Wholesale,6
+742,Jewelry Stores,6
+710,Lodging,6
+770,Major Airlines,6
+769,Management Services,6
+721,Marketing Services,6
+754,Medical Equipment Wholesale,6
+726,Movie Production; Theaters,6
+743,Music & Video Stores,6
+762,Personal Services,6
+729,Publishing - Books,6
+727,Publishing - Newspapers,6
+728,Publishing - Periodicals,6
+776,Railroads,6
+771,Regional Airlines,6
+761,Rental & Leasing Services,6
+768,Research Services,6
+711,Resorts & Casinos,6
+712,Restaurants,6
+765,Security & Protection Services,6
+775,Shipping,6
+713,Specialty Eateries,6
+745,Specialty Retail; Other,6
+715,Sporting Activities,6
+740,Sporting Goods Stores,6
+764,Staffing & Outsourcing Services,6
+767,Technical Services,6
+741,Toy & Hobby Stores,6
+774,Trucking,6
+759,Wholesale; Other,6
+821,Application Software,7
+826,Business Software & Services,7
+841,Communication Equipment,7
+812,Computer Based Systems,7
+815,Computer Peripherals,7
+813,Data Storage Devices,7
+846,Diversified Communication Services,7
+810,Diversified Computer Systems,7
+836,Diversified Electronics,7
+825,Healthcare Information Services,7
+827,Information & Delivery Services,7
+824,Information Technology Services,7
+851,Internet Information Providers,7
+850,Internet Service Providers,7
+852,Internet Software & Services,7
+843,Long Distance Carriers,7
+820,Multimedia & Graphics Software,7
+814,Networking & Communication Devices,7
+811,Personal Computers,7
+835,Printed Circuit Boards,7
+842,Processing Systems & Products,7
+837,Scientific & Technical Instruments,7
+823,Security Software & Services,7
+830,Semiconductor - Broad Line,7
+833,Semiconductor - Integrated Circuits,7
+832,Semiconductor - Specialized,7
+834,Semiconductor Equipment & Materials,7
+831,Semiconductor- Memory Chips,7
+822,Technical & System Software,7
+844,Telecom Services - Domestic,7
+845,Telecom Services - Foreign,7
+840,Wireless Communications,7
+913,Diversified Utilities,8
+911,Electric Utilities,8
+910,Foreign Utilities,8
+912,Gas Utilities,8
+914,Water Utilities,8
