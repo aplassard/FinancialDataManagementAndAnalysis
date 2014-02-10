@@ -30,6 +30,15 @@ public class DatabaseBuilder {
 			statement.execute("drop table if exists company_stock;");
 			statement.execute("create table company_stock(	\"id\" INTEGER PRIMARY KEY NOT NULL,\"stock_symbol\" VARCHAR(10) NOT NULL,\"company_name\" VARCHAR(100) NOT NULL,\"address\" VARCHAR(256) NOT NULL,\"phone_number\" VARCHAR(10) NOT NULL,\"website\" VARCHAR(100) NOT NULL,\"index_membership\" VARCHAR(100) NOT NULL,	\"number_of_employees\" INTEGER NOT NULL,\"industryID\" INTEGER NOT NULL,FOREIGN KEY(\"industryID\") REFERENCES industry(\"id\")	);");
 			System.out.println("Successfully create the company_stock table");
+			statement.execute("drop table if exists yearly_data;");
+			statement.execute("create table yearly_data(\"id\" INTEGER PRIMARY KEY NOT NULL,\"earnings\" REAL NOT NULL,\"market_cap\" INTEGER NOT NULL,\"year\" VARCHAR(4) NOT NULL,\"company_stockID\" INTEGER NOT NULL, FOREIGN KEY(\"company_stockID\") REFERENCES company_stock(\"id\"));");
+			System.out.println("Successfully created the yearly_data table");
+			statement.execute("drop table if exists competitor;");
+			statement.execute("create table competitor(\"id\" INTEGER PRIMARY KEY NOT NULL,\"competitorID\" INTEGER NOT NULL,\"competiteeID\" INTEGER NOT NULL,FOREIGN KEY(\"competitorID\") REFERENCES company_stock(\"id\"),FOREIGN KEY(\"competiteeID\") REFERENCES company_stock(\"id\")	);");
+			System.out.println("Successfully created the competitor table");
+			statement.execute("drop table if exists stock_price;");
+			statement.execute("create table stock_price(\"id\" INTEGER PRIMARY KEY NOT NULL,\"open\" REAL NOT NULL,\"close\" REAL NOT NULL,\"high\" REAL NOT NULL,\"low\" REAL NOT NULL,\"volume\" INTEGER NOT NULL,\"date\" DATETIME NOT NULL,\"company_stockID\" INTEGER NOT NULL,FOREIGN KEY(\"company_stockID\") REFERENCES company_stock(\"id\"));");
+			System.out.println("Successfully created stock_price table");
 		}
 		catch(SQLException e)
 		{
