@@ -1,0 +1,51 @@
+Stock Symbol ,Company Name,Address,Phone Number,Website,Index Membership,Number of Employees
+AAPL,Apple Inc.,"1 Infinite Loop, Cupertino, CA 95014",408-996-1010,http://www.apple.com,Nasdaq 100,80300
+ADBE,Adobe Systems Inc.,"345 Park Avenue, San Jose, CA 95110",408-536-6000,http://www.adobe.com,Nasdaq 100,11847
+AIG,"American International Group, Inc.","180 Maiden Lane, New York, NY 10038",212-770-7000,http://www.aig.com,N/A,63000
+AMTD,TD Ameritrade Holding Corporation ,"200 South 108th Avenue, Omaha, NE 68154",402-331-7856,http://www.tdameritrade.com,N/A,5429
+AMZN,Amazon.com Inc.,"410 Terry Avenue North, Seattle, WA 98109",206-266-1000,http://www.amazon.com,Nasdaq 100,117300
+BA,The Boeing Company,100 North Riverside Plaza,312-544-2000,http://www.boeing.com,Dow Jones Composite,168400
+C,Citigroup Inc.,"399 Park Avenue, New York, NY 10022",212-559-1000,http://www.citigroup.com,N/A,251000
+CME,CME Group Inc.,"20 South Wacker Drive, Chicago, IL 60606",312-930-1000,http://www.cme.com,N/A,N/A
+CPB,Cambell Soup Company,"1 Campbell Place, Camden, NJ 08103",856-342-4800,http://www.campbellsoupcompany.com,N/A,20000
+CSCO,"Cisco Systems, Inc.","170 West Tasman Drive, San Jose, CA 95134",408-526-4000,http://www.cisco.com,Dow Jones Composite,75049
+CVX,Chevron Corporation,6001 Bollinger Canyon Road,925-842-1000,http://www.chevron.com,Dow Jones Composite,N/A
+DFS,Discover Financial Services,2500 Lake Cook Road,224-405-0900,http://www.discoverfinancial.com,N/A,N/A
+DIS,The Walt Disney Company,"500 South Buena Vista Street, Burbank, CA 91521",818-560-1000,http://www.disney.com,Dow Jones Composite,175000
+EBAY,eBay Inc.,"2065 Hamilton Avenue, San Jose, CA 95125",408-376-7400,http://www.ebayinc.com,Nasdaq 100,31800
+EMC,EMC Corporation,"176 South Street, Hopkinton, MA 01748",508-435-1000,http://www.emc.com,N/A,N/A
+FB,Facebook Inc.,"1601 Willow Road, Menlo Park, CA 94025",650-543-4800,http://www.facebook.com,Nasdaq 100,6337
+FITB,Fifth Third Bancorp,38 Fountain Square Plaze,800-972-3030,http://www.53.com,N/A,19446
+GE,General Electric Company,"3135 Easton Turnpike, Fairfield, CT 06828",203-373-2211,http://www.ge.com,Dow Jones Composite,N/A
+GM,General Motors Company,300 Renaissance Center,313-556-5000,http://www.gm.com,N/A,N/A
+GPS,"The Gap, Inc.","Two Folsom Street, San Francisco, CA 94105",415-427-0100,http://www.gapinc.com,N/A,136000
+HPQ,Hewlett-Packard Company,"3000 Hanover Street, Palo Alto, CA 94304",650-857-1501,http://www.hp.com,N/A,317500
+IBM,International Business Machines Corporation,"1 New Orchard Road, Armonk, NY 10504",914-499-1900,http://www.ibm.com,Dow Jones Composite,N/A
+INTC,Intel Corporation,2200 Mission College Boulevard,408-765-8080,http://www.intel.com,Dow Jones Composite,107600
+JNJ,Johnson & Johnson,"One Johnson & Johnson Plaza, New Brunswick, NJ 08933",732-524-0400,http://www.jnj.com,Dow Jones Composite,128000
+JPM,JPMorgan Chase & Co.,"270 Park Avenue, New York, NY 10017",212-270-6000,http://www.jpmorganchase.com,Dow Jones Composite,251196
+KRFT,Kraft Foods Group Inc.,"Three Lakes Drive, Northfield, IL 60093",847-646-2000,http://www.kraftfoodsgroup.com,Nasdaq 100,23000
+KSS,Kohl's Corp,"N56 W17000 Ridgewood Drive, Menomonee Falls, WI 53051",262-703-7000,http://www.kohlscorporation.com,N/A,30000
+LNKD,LinkedIn Corporation,"2029 Stierlin Court, Mountain View, CA 94043",650-687-3600,http://www.linkedin.com,N/A,N/A
+LOW,Lowe's Companies Inc.,"1000 Lowe's Boulevard, Mooresville, NC 28117",704-758-1000,http://www.lowes.com,N/A,160000
+LUV,Southwest Airlines Co.,"2702 Love Field Drive, Dallas, TX 75235 ",214-792-4000,http://www.southwest.com,Dow Jones Composite,44831
+MCD,McDonald's Corp.,"One McDonald, Oak Brook, IL 60523",630-623-3000,http://www.aboutmcdonalds.com,Dow Jones Composite,440000
+MSFT,Microsoft Coporation ,"One Microsoft Way, Redmond, WA 98052",425-882-8080,http://www.microsoft.com,Dow Jones Composite,99000
+NFLX,"Netfilx, Inc.","100 Winchester Circle, Los Gatos, CA 95032",408-540-3700,http://www.netflix.com,Nasdaq 100,2022
+NI,NiSource Inc.,"801 East 86th Avenue, Merrillville, IN 46410",877-647-5990,http://www.nisource.com,Dow Jones Composite,8286
+NKE,"Nike, Inc.","One Bowerman Drive, Beaverton, OR 97005",503-671-6453,http://www.nikeinc.com,Dow Jones Composite,48000
+PCG,PG&E Corporation ,"77 Beale Street, San Francisco, CA 94117",415-973-1000,http://www.pgecorp.com,Dow Jones Composite,20593
+PEP,"Pepisco, Inc.","700 Anderson Hill Road, Purchase, NY 10577",914-253-2000,http://www.pepsico.com,N/A,278000
+PM,"Philip Morris International, Inc.","120 Park Avenue, New York, NY 10017",917-663-2000,http://www.pmi.com,N/A,N/A
+SBUX,Starbucks Corporation ,"2401 Utah Avenue South, Seatlle, WA 98134",206-447-1575,http://www.starbucks.com,Nasdaq 100,182000
+SLB,Schlumberger Limited,"5599 San Felipe 17th Floor, Houston, TX 77056",713-375-3400,http://www.slb.com,N/A,118000
+STJ,St. Jude Medical Inc.,"One St. Jude Medical Drive, Saint Paul, MN 55117 ",651-756-2000,http://www.sjm.com,N/A,N/A
+TWC,Time Warner Cable Inc.,60 Columbus Circle,212-364-8200,http://www.timewarnercable.com,N/A,50250
+TXN,Texas Instruments Inc.,"12500 TI Boulevard, Dallas, TX 75266",214-479-3773,http://www.ti.com,Nasdaq 100,N/A
+USB,U.S. Bancorp,"800 Nicollet Mall, Minneapolis, MN 55402",651-466-3000,http://www.usbank.com,N/A,N/A
+V,Visa Inc.,"PO Box 8999, San Francisco, CA 94128",650-432-3200,http://www.corporate.visa.com,Dow Jones Composite,9500
+VZ,Verizon Communications Inc.,"140 West Street, New York, NY 10007",212-395-1000,http://www.verizon.com,Dow Jones Composite,176800
+WMT,Wal-Mart Stores Inc.,"702 SW 8th Street, Bentonville, AR 72716",479-273-4000,http://www.walmart.com,Dow Jones Composite,2200000
+XOM,Exxon Mobil Corporation,"5959 Las Colinas Boulevard, Irving, TX 75039",972-444-1000,http://www.exxonmobil.com,Dow Jones Composite,N/A
+YHOO,Yahoo! Inc.,"701 First Avenue, Sunnyvale, CA 94089",408-349-3300,http://www.yahoo.com,Nasdaq 100,N/A
+YUM,"Yum! Brands, Inc.","1441 Gardiner Lane, Louisville, KY 40213",502-874-8300,http://www.yum.com,N/A,N/A
