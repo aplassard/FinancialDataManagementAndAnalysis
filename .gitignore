@@ -10,3 +10,6 @@
 
 # Database Files
 *.db
+
+# Eclipse directory structures
+bin
