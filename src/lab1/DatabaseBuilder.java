@@ -49,6 +49,36 @@ public class DatabaseBuilder {
 
 		return company;
 	}
+	
+	public static void loadCompetitorTable(Connection connection, File file)
+	{
+		BufferedReader br = null;
+		String[] lineInfo = null;
+		String line = null;
+		int id1,id2;
+		HashMap<String,Integer> company = loadCompanyHashMap(connection);
+		try
+		{
+			br = new BufferedReader(new FileReader(file));
+			Statement statement = connection.createStatement();
+			int n = 0;
+			while((line=br.readLine())!=null){
+				lineInfo = line.split(",");
+				id1 = company.get(lineInfo[0]);
+				id2 = company.get(lineInfo[1]);
+				if(id1!=id2){
+					String stat = "insert into competitor values("+(n++)+","+id1+","+id2+")";
+					statement.execute(stat);
+				}
+			}
+		}
+		catch(SQLException e){
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
 	public static void loadYearlyStockData(Connection connection,File file){
 		BufferedReader br = null;
@@ -279,9 +309,9 @@ public class DatabaseBuilder {
 			statement.execute("drop table if exists competitor;");
 			statement.execute("create table competitor(\"id\" INTEGER PRIMARY KEY NOT NULL,\"competitorID\" INTEGER NOT NULL,\"competiteeID\" INTEGER NOT NULL,FOREIGN KEY(\"competitorID\") REFERENCES company_stock(\"id\"),FOREIGN KEY(\"competiteeID\") REFERENCES company_stock(\"id\")	);");
 			System.out.println("Successfully created the competitor table");
-			statement.execute("drop table if exists stock_price;");
-			statement.execute("create table stock_price(\"id\" INTEGER PRIMARY KEY NOT NULL,\"open\" REAL NOT NULL,\"close\" REAL NOT NULL,\"high\" REAL NOT NULL,\"low\" REAL NOT NULL,\"volume\" INTEGER NOT NULL,\"date\" DATETIME NOT NULL,\"company_stockID\" INTEGER NOT NULL,FOREIGN KEY(\"company_stockID\") REFERENCES company_stock(\"id\"));");
-			System.out.println("Successfully created stock_price table");
+//			statement.execute("drop table if exists stock_price;");
+//			statement.execute("create table stock_price(\"id\" INTEGER PRIMARY KEY NOT NULL,\"open\" REAL NOT NULL,\"close\" REAL NOT NULL,\"high\" REAL NOT NULL,\"low\" REAL NOT NULL,\"volume\" INTEGER NOT NULL,\"date\" DATETIME NOT NULL,\"company_stockID\" INTEGER NOT NULL,FOREIGN KEY(\"company_stockID\") REFERENCES company_stock(\"id\"));");
+//			System.out.println("Successfully created stock_price table");
 			f = new File("lab1/data/sector.csv");
 			loadSectorTable(connection,f);
 			ResultSet rs = statement.executeQuery("select * from sector");
@@ -302,17 +332,24 @@ public class DatabaseBuilder {
 				System.out.println("Stock Symbol: "+rs.getString("stock_symbol"));
 			}
 			rs = statement.executeQuery("select * from company_stock");
-			int num = 0;
+/*			int num = 0;
 			while(rs.next()) {
 				System.out.println(num);
 				num = loadStockPriceTable(connection, rs.getString("stock_symbol"), rs.getString("id"), num);
 				num++;
 			}
+*/
 			f = new File("lab1/data/Ticker_MarketCap_Earnings.csv");
 			loadYearlyStockData(connection,f);
 			rs = statement.executeQuery("select * from yearly_data");
 			while(rs.next()){
 				System.out.println("Stock ID: "+rs.getString("company_stockID")+" Earnings: "+rs.getFloat("earnings")+" Market Cap: "+rs.getInt("market_cap")+" Year: "+rs.getString("year"));
+			}
+			f = new File("lab1/data/competitors.csv");
+			loadCompetitorTable(connection,f);
+			rs = statement.executeQuery("select * from competitor");
+			while(rs.next()){
+				System.out.println("Competitor: "+rs.getInt("competitorID")+" Competitee: "+rs.getInt("competiteeID"));
 			}
 		}
 		catch(SQLException e)
