@@ -87,7 +87,6 @@ public class DatabaseBuilder {
 			while((line=br.readLine())!=null){
 				line = line.replace("\"", "");
 				lineInfo = line.split("\t");
-				System.out.println(lineInfo[0]);
 				int sect = company.get(lineInfo[0]);
 				if(!isInteger(lineInfo[6]))lineInfo[6]="-1";
 				String stat = "insert into company_stock values("+n+",\""+lineInfo[0]+"\""+",\""+lineInfo[1]+"\",\""+lineInfo[2]+"\",\""+lineInfo[3]+"\",\""+lineInfo[4]+"\",\""+lineInfo[5]+"\","+lineInfo[6]+","+sect+")";
@@ -157,6 +156,10 @@ public class DatabaseBuilder {
 			f = new File("lab1/data/Company_Profile_Stock_Profile_Tab_Delimited.txt");
 			File f2 = new File("lab1/data/company.csv");
 			loadCompanyTable(connection,f,f2);
+			rs = statement.executeQuery("select * from company_stock");
+			while(rs.next()){
+				System.out.println("Stock Symbol: "+rs.getString("stock_symbol"));
+			}
 		}
 		catch(SQLException e)
 		{
