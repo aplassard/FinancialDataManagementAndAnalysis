@@ -13,3 +13,9 @@
 
 # Eclipse directory structures
 bin
+
+# virtual environment directory
+venv
+
+# Mac Packages
+.DS_Store
