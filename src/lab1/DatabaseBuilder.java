@@ -4,7 +4,7 @@ import java.io.*;
 import java.sql.*;
 
 public class DatabaseBuilder {
-	
+
 	public static void loadSectorTable(Connection connection,File file){
 		BufferedReader br=null;
 		try {
@@ -20,6 +20,31 @@ public class DatabaseBuilder {
 			}
 			br.close();
 		} catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void loadIndustryTable(Connection connection,File file){
+		try
+		{
+			String line = null;
+			BufferedReader br = new BufferedReader(new FileReader(file));
+			String[] lineInfo;
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);  // set timeout to 30 sec.
+			while((line=br.readLine())!=null){
+				lineInfo = line.split(",");
+				String stat = "insert into industry values("+lineInfo[0]+",\""+lineInfo[1]+"\","+lineInfo[2]+")";
+				statement.execute(stat);
+			}
+		}
+		catch (IOException e) 
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -71,6 +96,12 @@ public class DatabaseBuilder {
 			ResultSet rs = statement.executeQuery("select * from sector");
 			while(rs.next()){
 				System.out.println("ID: "+rs.getString("id")+" Name: "+rs.getString("name"));
+			}
+			f = new File("lab1/data/industry_sector_table.csv");
+			loadIndustryTable(connection,f);
+			rs = statement.executeQuery("select * from industry");
+			while(rs.next()){
+				System.out.println("ID: "+rs.getString("id")+" Name: "+rs.getString("name")+" SectorID: "+rs.getString("sectorID"));
 			}
 		}
 		catch(SQLException e)
