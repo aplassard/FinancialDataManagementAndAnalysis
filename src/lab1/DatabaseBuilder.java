@@ -186,6 +186,37 @@ public class DatabaseBuilder {
 		}
 	}
 
+	public static int loadStockPriceTable(Connection connection, String ticker, String id, int num){
+		try
+		{
+			String line = null;
+			String[] lineInfo;
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);  // set timeout to 30 sec.
+			String timestamp = " 00:00:00";
+			File f = new File("lab1/data/PriceData/"+ticker+".csv");
+			BufferedReader br = new BufferedReader(new FileReader(f));
+			br.readLine();
+			while((line=br.readLine())!=null){
+				lineInfo = line.split(",");
+				String stat = "insert into stock_price values("+num+","+lineInfo[1]+","+lineInfo[4]+","+lineInfo[2]+","+lineInfo[3]+","+lineInfo[5]+",\""+lineInfo[0]+timestamp+"\","+id+")";
+				statement.execute(stat);
+				num++;
+			}
+			System.out.println(ticker);
+		}
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return num;
+	}
+	
 	/**
 	 * @param args
 	 * @throws ClassNotFoundException 
@@ -240,6 +271,13 @@ public class DatabaseBuilder {
 			rs = statement.executeQuery("select * from company_stock");
 			while(rs.next()){
 				System.out.println("Stock Symbol: "+rs.getString("stock_symbol"));
+			}
+			rs = statement.executeQuery("select * from company_stock");
+			int num = 0;
+			while(rs.next()) {
+				System.out.println(num);
+				num = loadStockPriceTable(connection, rs.getString("stock_symbol"), rs.getString("id"), num);
+				num++;
 			}
 			f = new File("lab1/data/Ticker_MarketCap_Earnings.csv");
 			loadYearlyStockData(connection,f);
