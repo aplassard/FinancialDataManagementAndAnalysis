@@ -309,9 +309,9 @@ public class DatabaseBuilder {
 			statement.execute("drop table if exists competitor;");
 			statement.execute("create table competitor(\"id\" INTEGER PRIMARY KEY NOT NULL,\"competitorID\" INTEGER NOT NULL,\"competiteeID\" INTEGER NOT NULL,FOREIGN KEY(\"competitorID\") REFERENCES company_stock(\"id\"),FOREIGN KEY(\"competiteeID\") REFERENCES company_stock(\"id\")	);");
 			System.out.println("Successfully created the competitor table");
-//			statement.execute("drop table if exists stock_price;");
-//			statement.execute("create table stock_price(\"id\" INTEGER PRIMARY KEY NOT NULL,\"open\" REAL NOT NULL,\"close\" REAL NOT NULL,\"high\" REAL NOT NULL,\"low\" REAL NOT NULL,\"volume\" INTEGER NOT NULL,\"date\" DATETIME NOT NULL,\"company_stockID\" INTEGER NOT NULL,FOREIGN KEY(\"company_stockID\") REFERENCES company_stock(\"id\"));");
-//			System.out.println("Successfully created stock_price table");
+			statement.execute("drop table if exists stock_price;");
+			statement.execute("create table stock_price(\"id\" INTEGER PRIMARY KEY NOT NULL,\"open\" REAL NOT NULL,\"close\" REAL NOT NULL,\"high\" REAL NOT NULL,\"low\" REAL NOT NULL,\"volume\" INTEGER NOT NULL,\"date\" DATETIME NOT NULL,\"company_stockID\" INTEGER NOT NULL,FOREIGN KEY(\"company_stockID\") REFERENCES company_stock(\"id\"));");
+			System.out.println("Successfully created stock_price table");
 			f = new File("lab1/data/sector.csv");
 			loadSectorTable(connection,f);
 			ResultSet rs = statement.executeQuery("select * from sector");
@@ -332,13 +332,13 @@ public class DatabaseBuilder {
 				System.out.println("Stock Symbol: "+rs.getString("stock_symbol"));
 			}
 			rs = statement.executeQuery("select * from company_stock");
-/*			int num = 0;
+			int num = 0;
 			while(rs.next()) {
 				System.out.println(num);
 				num = loadStockPriceTable(connection, rs.getString("stock_symbol"), rs.getString("id"), num);
 				num++;
 			}
-*/
+
 			f = new File("lab1/data/Ticker_MarketCap_Earnings.csv");
 			loadYearlyStockData(connection,f);
 			rs = statement.executeQuery("select * from yearly_data");
