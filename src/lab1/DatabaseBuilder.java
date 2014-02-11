@@ -52,44 +52,73 @@ public class DatabaseBuilder {
 
 	public static void loadYearlyStockData(Connection connection,File file){
 		BufferedReader br = null;
+		HashMap<String,Integer> companies = loadCompanyHashMap(connection);
 		String stockSymbol;
 		String mc2009;
 		String mc2010;
 		String mc2011;
 		String mc2012;
 		String mc2013;
+		String mc2014;
 		String e2009;
 		String e2010;
 		String e2011;
 		String e2012;
 		String e2013;
+		String e2014;
 		try
 		{
+			Statement statement = connection.createStatement();
 			br = new BufferedReader(new FileReader(file));
 			String[] lineInfo = null;
 			String line = null;
 			br.readLine();
 			br.readLine();
 			String stat;
+			int n = 0;
 			while((line=br.readLine())!=null)
 			{
 				lineInfo = line.split(",");
 				stockSymbol = lineInfo[0];
+				int stockID = companies.get(stockSymbol);
 				mc2009 = isNumber(lineInfo[2]) ? lineInfo[2] : "NULL";
-				mc2010 = lineInfo[3];
-				mc2011 = lineInfo[4];
-				mc2012 = lineInfo[5];
-				mc2013 = lineInfo[6];
-				e2009 = lineInfo[9];
-				e2010 = lineInfo[10];
-				e2011 = lineInfo[11];
-				e2012 = lineInfo[12];
-				e2013 = lineInfo[13];
+				mc2010 = isNumber(lineInfo[3]) ? lineInfo[3] : "NULL";
+				mc2011 = isNumber(lineInfo[4]) ? lineInfo[4] : "NULL";
+				mc2012 = isNumber(lineInfo[5]) ? lineInfo[5] : "NULL";
+				mc2013 = isNumber(lineInfo[6]) ? lineInfo[6] : "NULL";
+				mc2014 = "NULL";
+				e2009 = isNumber(lineInfo[9])  ? lineInfo[9] : "NULL";
+				e2010 = isNumber(lineInfo[10]) ? lineInfo[10] : "NULL";
+				e2011 = isNumber(lineInfo[11]) ? lineInfo[11] : "NULL";
+				e2012 = isNumber(lineInfo[12]) ? lineInfo[12] : "NULL";
+				e2013 = isNumber(lineInfo[13]) ? lineInfo[13] : "NULL";
+				e2014 = isNumber(lineInfo[14]) ? lineInfo[14] : "NULL";
 //				stat = "insert into yearly_data values("+lineInfo[0]+",\""+lineInfo[1]+"\")";
+				stat = "insert into yearly_data values("+n+","+e2009+","+mc2009+",\"2009\","+stockID+")";
+				statement.execute(stat);
+				n++;
+				stat = "insert into yearly_data values("+n+","+e2010+","+mc2010+",\"2010\","+stockID+")";
+				statement.execute(stat);
+				n++;
+				stat = "insert into yearly_data values("+n+","+e2011+","+mc2011+",\"2011\","+stockID+")";
+				statement.execute(stat);
+				n++;
+				stat = "insert into yearly_data values("+n+","+e2012+","+mc2012+",\"2012\","+stockID+")";
+				statement.execute(stat);
+				n++;
+				stat = "insert into yearly_data values("+n+","+e2013+","+mc2013+",\"2013\","+stockID+")";
+				statement.execute(stat);
+				n++;
+				stat = "insert into yearly_data values("+n+","+e2014+","+mc2014+",\"2014\","+stockID+")";
+				statement.execute(stat);
+				n++;
 			}
 		}
 		catch(IOException e)
 		{
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -281,6 +310,10 @@ public class DatabaseBuilder {
 			}
 			f = new File("lab1/data/Ticker_MarketCap_Earnings.csv");
 			loadYearlyStockData(connection,f);
+			rs = statement.executeQuery("select * from yearly_data");
+			while(rs.next()){
+				System.out.println("Stock ID: "+rs.getString("company_stockID")+" Earnings: "+rs.getFloat("earnings")+" Market Cap: "+rs.getInt("market_cap")+" Year: "+rs.getString("year"));
+			}
 		}
 		catch(SQLException e)
 		{
