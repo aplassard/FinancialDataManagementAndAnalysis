@@ -2,9 +2,20 @@ package lab1;
 
 import java.io.*;
 import java.sql.*;
+import java.util.HashMap;
 
 public class DatabaseBuilder {
 
+	public static boolean isInteger(String s) {
+	    try { 
+	        Integer.parseInt(s); 
+	    } catch(NumberFormatException e) { 
+	        return false; 
+	    }
+	    // only got here if we didn't return false
+	    return true;
+	}
+	
 	public static void loadSectorTable(Connection connection,File file){
 		BufferedReader br=null;
 		try {
@@ -42,6 +53,46 @@ public class DatabaseBuilder {
 				lineInfo = line.split(",");
 				String stat = "insert into industry values("+lineInfo[0]+",\""+lineInfo[1]+"\","+lineInfo[2]+")";
 				statement.execute(stat);
+			}
+		}
+		catch (IOException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public static void loadCompanyTable(Connection connection, File file,File file2){
+		try
+		{
+			String line = null;
+			BufferedReader br = new BufferedReader(new FileReader(file2));
+			HashMap<String,Integer> company = new HashMap<String,Integer>();
+			br.readLine();
+			
+			String[] lineInfo;
+			while((line=br.readLine())!=null){
+				lineInfo = line.split("\t");
+				company.put(lineInfo[2],Integer.parseInt(lineInfo[0]));
+			}
+			br = new BufferedReader(new FileReader(file));
+			Statement statement = connection.createStatement();
+			statement.setQueryTimeout(30);  // set timeout to 30 sec.
+			int n = 0;
+			br.readLine();
+			while((line=br.readLine())!=null){
+				line = line.replace("\"", "");
+				lineInfo = line.split("\t");
+				System.out.println(lineInfo[0]);
+				int sect = company.get(lineInfo[0]);
+				if(!isInteger(lineInfo[6]))lineInfo[6]="-1";
+				String stat = "insert into company_stock values("+n+",\""+lineInfo[0]+"\""+",\""+lineInfo[1]+"\",\""+lineInfo[2]+"\",\""+lineInfo[3]+"\",\""+lineInfo[4]+"\",\""+lineInfo[5]+"\","+lineInfo[6]+","+sect+")";
+				statement.execute(stat);
+				n++;
 			}
 		}
 		catch (IOException e) 
@@ -103,6 +154,9 @@ public class DatabaseBuilder {
 			while(rs.next()){
 				System.out.println("ID: "+rs.getString("id")+" Name: "+rs.getString("name")+" SectorID: "+rs.getString("sectorID"));
 			}
+			f = new File("lab1/data/Company_Profile_Stock_Profile_Tab_Delimited.txt");
+			File f2 = new File("lab1/data/company.csv");
+			loadCompanyTable(connection,f,f2);
 		}
 		catch(SQLException e)
 		{
